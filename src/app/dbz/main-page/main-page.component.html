@@ -1,0 +1,55 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <!-- <h3>Personajes</h3>
+        <hr>
+        <ul>
+            @for(personajedbz of personajes;track $index){
+                <li>{{personajedbz.nombre}} - {{personajedbz.poder | number}} </li>
+            }
+        </ul> -->
+        <!-- <li *ngFor="let personajedbz of personajes">
+            {{personajedbz.nombre}} - {{personajedbz.poder}} </li> -->
+        <app-personajes ></app-personajes>
+        <!-- las llaves me indica que quiero relacionar una propiedad de main-page con personajescomponets -->
+    </div>
+    <div class="col">
+        <app-agregar 
+        [nuevo]="nuevo"></app-agregar>
+    </div>
+</div>
+
+
+
+
+<!-- <h3>
+    Agregar a 
+    <b> {{nuevo.nombre}}</b> poder de:
+    <b> {{nuevo.poder}} </b>
+</h3>
+<hr> -->
+<!-- ngforms  evento personalizado de 'formsModule'-->
+<!-- <form (ngSubmit)="agregar()">
+    <input 
+    type="text" 
+    placeholder="Nombre"
+    name="nombre"
+    [(ngModel)]="nuevo.nombre"
+    /> -->
+    <!-- [value]="nuevo.nombre"
+    (input)="cambiarNombre( $event)" -->
+
+    <!-- <input 
+    type="number" 
+    placeholder="Poder"
+    [value]="nuevo.poder"
+    name="poder"
+    [(ngModel)]="nuevo.poder"
+    /> -->
+    <!-- [(ngModel)]="nuevo.poder" cuando agrego {[]} me indica que quiero tanto escuchar como emitir el evento-->
+    <!-- <button type="submit">
+        Agregar
+    </button>
+</form> -->

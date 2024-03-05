@@ -4,11 +4,13 @@ import {ContadorComponent }from './Contador/contador.component';
 import { CommonModule } from '@angular/common';
 import { HeroeComponent } from './Heroes/Heroe/heroe.component';
 import { ListadoComponent } from './Heroes/listado/listado.component';
+import { MainPageComponent } from './dbz/main-page/main-page.component';
+import { dbzService } from './dbz/services/dbz.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule,RouterOutlet,ContadorComponent,HeroeComponent,ListadoComponent],
+  imports: [CommonModule,RouterOutlet,ContadorComponent,HeroeComponent,ListadoComponent,MainPageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
